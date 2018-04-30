@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="353.0" prefWidth="574.0" style="-fx-background-color: linear-gradient(to bottom,#ff0000, #00008b);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <JFXTabPane layoutY="40.0" prefHeight="329.0" prefWidth="574.0" snapToPixel="false" stylesheets="@helpStyleSheet.css" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab closable="false" style="-fx-background-color: linear-gradient(to bottom, #000066,#0066ff);" text="Getting Started">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Text fill="WHITE" layoutX="13.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Getting Started" wrappingWidth="376.13671875">
+                           <font>
+                              <Font name="Calibri Bold" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="13.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- In the &quot;LETTER GRADE&quot; Section insert your letter grades for the semester on seperate lines" wrappingWidth="556.890625">
+                           <font>
+                              <Font name="Calibri Light" size="17.5" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="13.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- Each Grade should be capitalized when typed and should include the appropriate sign (ie: A, B+, C)" wrappingWidth="546.0">
+                           <font>
+                              <Font name="Calibri Light" size="17.5" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="13.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- Do not insert Pass/No Credit courses into the input field. They will not be counted in the calculation" wrappingWidth="563.0">
+                           <font>
+                              <Font name="Calibri Light" size="17.5" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="13.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- In the &quot;CREDITS&quot; Section insert the credit value of each cooresponding course. " wrappingWidth="553.1787109375">
+                           <font>
+                              <Font name="Calibri Light" size="17.5" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="14.0" layoutY="249.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- When done click the &quot;CALCULATE&quot; button to compute and output the grade point average  " wrappingWidth="562.296875">
+                           <font>
+                              <Font name="Calibri Light" size="17.5" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab closable="false" style="-fx-background-color: linear-gradient(to bottom, #000066,#0066ff);" text="Adding Semester">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Text fill="WHITE" layoutX="16.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adding Other Semester Grades">
+                           <font>
+                              <Font name="Calibri Bold" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="11.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- To add other semester grades,  click &quot;CALCULATE&quot; to save the current semester's GPA then click the &quot;ADD SEMESTER&quot; button." wrappingWidth="555.630859375">
+                           <font>
+                              <Font name="Calibri Light" size="17.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="12.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- Add the new information and click &quot;CALCULATE&quot;. (Continue the process for each semester you want to add)" wrappingWidth="550.5">
+                           <font>
+                              <Font name="Calibri Light" size="17.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="11.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- After adding every semester, click &quot;CALCULATE&quot; to save all information. Then click &quot;TOTAL GPA&quot; to calculate the final GPA" wrappingWidth="558.5">
+                           <font>
+                              <Font name="Calibri Light" size="17.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab closable="false" style="-fx-background-color: linear-gradient(to bottom, #000066,#0066ff);" text="Clearing Entries">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Text fill="WHITE" layoutX="16.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- To clear all of the entries (Current semester and previous semesters) click the &quot;CLEAR&quot; button. All memory has then been cleared." wrappingWidth="547.0">
+                           <font>
+                              <Font name="Calibri Light" size="17.5" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="14.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clearing All Entries" wrappingWidth="213.7294921875">
+                           <font>
+                              <Font name="Calibri Bold" size="20.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab closable="false" style="-fx-background-color: linear-gradient(to bottom, #000066,#0066ff);" text="Open/Save File">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Text fill="WHITE" layoutX="9.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- To save information on the screen (For one semester), click the &quot;FILE&quot; button on the top left of the screen and navigate to the &quot;SAVE&quot; button." wrappingWidth="561.0">
+                           <font>
+                              <Font name="Calibri Light" size="17.5" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="10.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Opening A File">
+                           <font>
+                              <Font name="Calibri Bold" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="10.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- Click the button and navigate to the text file to be opened. Press the open button and the information should now be displayed on the screen." wrappingWidth="561.0">
+                           <font>
+                              <Font name="Calibri Light" size="17.5" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="10.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- To open a file of grades and credits (For one semester), click the &quot;FILE&quot; button on the top left of the screen and navigate to the &quot;OPEN&quot; button." wrappingWidth="561.0">
+                           <font>
+                              <Font name="Calibri Light" size="17.5" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="10.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Saving A File">
+                           <font>
+                              <Font name="Calibri Bold" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="11.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- Click the button and navigate to the location where the information is to be saved. To save to an existing file, click the file and click &quot;SAVE&quot;. Allow for the information to be overwritten. To save to a new file, enter the file name into the text prompt area and click &quot;SAVE&quot;. A new text file has been generated." wrappingWidth="560.0">
+                           <font>
+                              <Font name="Calibri Light" size="17.5" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+      <Text layoutX="-1.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RUTGERS SCHOOL OF ENGINEERING GPA CALCULATOR BY S. SINGH" textAlignment="CENTER" wrappingWidth="574.0">
+         <font>
+            <Font name="Ebrima Bold" size="17.5" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.08571428571428574" startY="0.3">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+   </children>
+</AnchorPane>
